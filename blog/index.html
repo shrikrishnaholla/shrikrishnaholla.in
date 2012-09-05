@@ -1,0 +1,81 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Shrikrishna Holla's Blog Index</title>
+
+		<meta name="description" content="Index of blogs written by Shrikrishna Holla">
+		<meta name="author" content="Hakim El Hattab, Shrikrishna Holla">
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/example.css">
+		<link rel="stylesheet" href="css/stroll.css">
+
+		<style>
+			body {
+				overflow: hidden;
+			}
+			header {
+				margin-bottom: 0;
+			}
+			ul {
+				position: relative;
+				width: 75%;
+				margin: 0 auto;
+				overflow-x: visible;
+			}
+			ul li {
+				position: relative;
+				width: 75%;
+				margin: 0 auto;
+				padding: 80px;
+			}
+		</style>
+	</head>
+	
+	<body>
+
+		<ul class="fly">
+			<li><a href="software-freedom/">Software Freedom and power of OpenSource</a></li>
+			<li><a href="be-a-contributor/">Be a Contributor and help make this world a better place</a></li>
+		</ul>
+
+		<script src="js/stroll.js"></script>
+		<script>
+			var list = document.querySelector( 'ul' );
+			var type = window.location.search.slice( 1 ) || 'fly';
+
+			list.className = type;
+			
+			window.addEventListener( 'resize', updateHeight, false );
+
+			updateHeight();
+
+			function updateHeight() {
+				list.style.height = window.innerHeight + 'px';
+				stroll.bind( 'ul' );
+			}
+		</script>
+
+		<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34261234-1']);
+  _gaq.push(['_setDomainName', 'shrikrishnaholla.in']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- end of google analytics -->
+		
+	</body>
+</html>
